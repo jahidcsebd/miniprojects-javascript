@@ -11,7 +11,7 @@ body {
 }
 
 .background {
-  background-image: url("./img/mountain.jpg");
+  background-image: url("./img/bg1.jpg");
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -24,5 +24,64 @@ body {
 }
 .container h1 {
   font-size: 4rem;
+  color: #3F5155;
+}
+.center h1{
+  font-size: 4rem;
+  color: #3F5155 !important;
+}
+.time-container h2{
+  font-size: 4rem;
+  color: #3F5155;
 }
 
+/* cog setting */
+.settings {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.settings .fa-cog {
+  font-size: 3rem;
+  color: white;
+}
+.settings-content {
+  display: flex;
+  gap: 1rem;
+}
+.settings-content input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.settings-content button {
+  padding: 0.5rem 1rem;
+  background-color: #3F5155;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+.hide {
+  display: none;
+}
+
+.time-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.time-container h2 {
+  line-height: 60px;
+  text-align: center;
+  font-size: 3rem;
+}
+.time-container div {
+  font-size: 4rem;
+  color: white;
+}

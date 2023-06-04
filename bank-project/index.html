@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome TO The Real World</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div id="login-area">
+        <h1 class="text-center">Welcome To The Real World</h1>
+        <div class="submit-area">
+            <h3>Login</h3>
+            <input type="email" name="" class="form-control" placeholder="Email: " required/><br />
+            <input type="password" name="" class="form-control" placeholder="Password: " required/><br />
+            <button id="login" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+    <!-- Transaction Area -->
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposite status">
+                    <h3>Deposite</h3>
+                    <h1>$<span id="currentDeposit">00</span></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="widthdraw status">
+                    <h3>Widthdraw</h3>
+                    <h1>$<span id="currentWidthdraw">00</span></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="ballance status">
+                    <h3>Ballance</h3>
+                    <h1>$<span id="currentBallance">1240</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="transaction-box">
+                    <h3>Deposite</h3>
+                    <input type="text" class="form-control" id="deposit-amount"
+                        placeholder="$ amount you want to deposite." /><br />
+                    <button id="deposit-btn" class="btn btn-success">Deposite</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="transaction-box">
+                    <h3>Widthdraw</h3>
+                    <input type="text" class="form-control" id="widthdraw-amount"
+                        placeholder="$ amount you want to widthdraw." /><br />
+                    <button id="widthdraw-btn" class="btn btn-success">
+                        Widthdraw
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
